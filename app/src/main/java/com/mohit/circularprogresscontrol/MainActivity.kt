@@ -64,7 +64,7 @@ class MainActivity : ComponentActivity() {
 fun MainComponent() {
     var isPlaying by remember { mutableStateOf(false) }
 
-    var darktheme = isSystemInDarkTheme()
+    val darktheme = isSystemInDarkTheme()
 
     Box(modifier = Modifier
         .fillMaxSize()
